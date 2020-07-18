@@ -1,7 +1,10 @@
 
 body{background-color: lightblue;}
 h1{color: darkred;}
-p{color: black}
+p{
+    color: black;
+    border: 10px white;
+}
 blockquote{color: black;}
 
 
