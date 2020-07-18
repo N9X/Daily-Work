@@ -1,6 +1,7 @@
 
 body{background-color:whitesmoke;}
-h1{color: darkred;}
+h1{color: darkred;
+font-size: x-large;}
 p{color: black;}
 a:link{color: blue;}
 a:visited{color: blueviolet;}
