@@ -1,0 +1,37 @@
+
+body{
+
+    background-color:whitesmoke;}
+h1{
+  
+    color: darkred;
+    font-size: 250%;
+}
+
+p{
+ 
+    color: black;
+}
+a:link{
+    color: blue;
+}
+
+a:visited
+{
+    color: blueviolet;
+}
+
+blockquote
+{
+    color: black;
+}
+table ,th ,td
+{
+    border: 1px solid black;
+     border-collapse: collapse;
+
+}
+th ,td{
+    padding: 1%;
+}
+
