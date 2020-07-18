@@ -4,6 +4,7 @@ h1{color: darkred;}
 p{
     color: black;
     border: 10px white;
+    padding: 10px;
 }
 blockquote{color: black;}
 
