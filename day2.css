@@ -1,11 +1,9 @@
 
-body{background-color: lightblue;}
+body{background-color:whitesmoke;}
 h1{color: darkred;}
-p{
-    color: black;
-    border: 10px white;
-    padding: 10px;
-}
+p{color: black;}
+a:link{color: blue;}
+a:visited{color: blueviolet;}
 blockquote{color: black;}
 
 
