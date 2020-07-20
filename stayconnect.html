@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <head>
     <title>STAY CONNECTED</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
 </head>
 <body>
-    <h1>Stay Connected With WWF</h1>
-    <h3>Sign up for newsletter</h3>
-    <form name="newsLetter" onsubmit="return newsletter()">
-        <p>Name: <input type="text" pattern="[a-zA-Z]+"  required size=65 name="Name"> </p><br>        
-        <p> Address: <input type="text"  pattern="[0-9 a-zA-Z]+" required size=65 name="Address">  </p><br> 
-        <p>E-mail Address: <input type="text" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required size=65 name="EMail">  </p>
-        <p>Telephone: <input type="text"  pattern="^[0-9]{10}$" size=65 name="Telephone"> </p><br>  
-        <p>
-            <input type="submit" value="SUBMIT" name="Submit">
-        </p> 
-    </form>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Stay Connected With WWF</h1>
+            </div>
+            <div class="col-lg-8">
+                <h3>Sign up for newsletter</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form name="newsLetter" onsubmit="return newsletter()">
+                    <p>Name: <input type="text" pattern="[a-zA-Z]+"  required size=65 name="Name"> </p><br>        
+                    <p> Address: <input type="text"  pattern="[0-9 a-zA-Z]+" required size=65 name="Address">  </p><br> 
+                    <p>E-mail Address: <input type="text" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required size=65 name="EMail">  </p>
+                    <p>Telephone: <input type="text"  pattern="^[0-9]{10}$" size=65 name="Telephone"> </p><br>  
+                    <p>
+                        <input type="submit" value="SUBMIT" name="Submit">
+                    </p> 
+                </form>
+            </div>
+            
+         
+        </div>
+    </div>
+    
 
 <script>
 
