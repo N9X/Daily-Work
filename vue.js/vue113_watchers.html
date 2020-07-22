@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+
+<div id="id">
+    <h1>
+        USER_NAME {{isActive==='active' ? 'isActive': 'not active'}}
+
+    </h1>
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+   var v= new Vue({
+        el: '#id',
+        data: {
+            isActive:'Active',
+          
+        },
+        watch: {
+            isActive: function(){
+                console.log("SENDING A EMAIL")
+            }
+
+        }
+        }
+    )
+</script>
+</body>
+</html>
