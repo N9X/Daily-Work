@@ -6,6 +6,9 @@
 
 
 <div id="id">
+    <h1>
+        {{msg}}
+    </h1>
     <ul>
         <li v-for="post in posts" :key="post.id">{{post.title}}</li>
     </ul>
@@ -23,6 +26,7 @@
     new Vue({
         el: '#id',
         data: {
+            msg: "LIST",
             posts: [
                 {id:1 , title:'post1' , body:"check from vue.js"},
                 {id:2 , title:'post2' , body:"check from vue.js"},
