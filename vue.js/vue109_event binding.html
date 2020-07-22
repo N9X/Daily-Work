@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+
+<div id="id">
+   
+    <button @click="increasFont">Increase</button>
+
+    <div :style="{color:'red', fontSize: fontSize + 'px'}">{{ msg }}</div>
+
+    <button @click="decreasFont">Decrease</button>
+  
+    
+    
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+    var v=new Vue({
+        el: '#id',
+        data: {
+            msg: 'HELLO',
+            fontSize: 20,
+         },
+        
+        
+        methods:{
+            increasFont(){
+                this.fontSize++;
+                console.log("FONTSIZE INCREASED BY +1")
+            },
+            decreasFont(){
+                this.fontSize--;
+                console.log("FONTSIZE DECREASED BY-1")
+            }
+        },
+    })
+</script>
+</body>
+</html>
