@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+
+<div id="id">
+   <post inline-template>
+       <h1 @click="display">HELLO FRM INLINE</h1>
+   </post>
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+    Vue.component('post',{
+        data(){
+            return{
+
+            }
+        },
+        methods:{
+            display(){
+                console.log("hello from the methods created in a componenet")
+            }
+        }
+        
+    });
+
+
+   var v= new Vue({
+        el: '#id',
+        data: {
+          msg:'Hwllo frm data' 
+          
+        },
+        
+        }
+    )
+</script>
+</body>
+</html>
