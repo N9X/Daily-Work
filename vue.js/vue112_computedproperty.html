@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+
+<div id="id">
+    <h1>
+        {{reverseMsg}}
+    </h1>
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script>
+    new Vue({
+        el: '#id',
+        data: {
+            msg: "LIST",
+          
+        },
+        computed: {
+
+            reverseMsg(){
+                return this.msg.split('').reverse('').join('')
+            }
+        }
+    })
+</script>
+</body>
+</html>
