@@ -56,6 +56,9 @@
                 </select>
                 <br>
                 <span>{{message}} selected the role of: {{ selected }}</span>
+                <br>
+                <br>
+                <button type="submit" @click="display">Submit</button>
 
 
 
@@ -70,6 +73,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
+ 
 
         var v= new Vue({
             el:"#frm",
@@ -79,6 +83,9 @@
                 checked: false,
                 skills: [],
                 selected:"",
+                display(){
+                    document.write("From Submitted")
+                    }
             }
 
         })
