@@ -19,17 +19,17 @@
         <div class="container">
             <div class="container-fluid" id="frm" >
                 <span>Your name here:</span>
-                <input v-model="message" placeholder="name please!">
+                <input v-model="message" placeholder="name please!"  :keyup.enter="submit">
                 <p>Your Name is: {{ message }}
                 </p>
                 <span>Please describe yourself in few lines</span>
                 <p style="white-space: pre-line;">{{paragraph}}</p>
                 <br>
-                 <textarea v-model='paragraph' placeholder="describe yourself here"></textarea>
+                 <textarea v-model='paragraph' placeholder="describe yourself here" :keyup.enter="submit"></textarea>
                 <br>
                 <br>
 
-                <input type="checkbox" id="checkbox" v-model="checked">
+                <input type="checkbox" id="checkbox" v-model="checked"  :keyup.enter="submit">
                 <label for="checkbox">{{ checked }}</label>
                 
                 
@@ -59,6 +59,7 @@
                 <br>
                 <br>
                 <button type="submit" @click="display">Submit</button>
+               
 
 
 
@@ -83,9 +84,20 @@
                 checked: false,
                 skills: [],
                 selected:"",
-                display(){
-                    document.write("From Submitted")
+            },
+            methods:{
+                display:function(event){
+                    if(this.message===''){
+                     alert("please enter your name")
                     }
+                    else
+                    {
+                        alert('Form submitted ' +  this.message + '!');
+                    }
+                    
+                   
+                },
+                
             }
 
         })
