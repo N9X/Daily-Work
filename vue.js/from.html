@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FORM.VUE.JS</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+       
+        <div class="container-fluid">
+            <ul>
+                <li class="navbar-item">
+                    <a>From</a> 
+                    <a>for personal details</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="container-fluid" id="frm" >
+                <span>Your name here:</span>
+                <input v-model="message" placeholder="name please!">
+                <p>Your Name is: {{ message }}
+                </p>
+                <span>Please describe yourself in few lines</span>
+                <p style="white-space: pre-line;">{{paragraph}}</p>
+                <br>
+                 <textarea v-model='paragraph' placeholder="describe yourself here"></textarea>
+                <br>
+                <br>
+
+                <input type="checkbox" id="checkbox" v-model="checked">
+                <label for="checkbox">{{ checked }}</label>
+                
+                
+                <br>
+                <br>
+                <input type="checkbox" id="node.js" value="Node.js" v-model="skills">
+                <label for="node.js">Node.js</label>
+                <input type="checkbox" id="vue.js" value="Vue.js" v-model="skills">
+                <label for="vue.js">Vue.js</label>
+                <input type="checkbox" id="jquery.js" value="Jquery.js" v-model="skills">
+                <label for="jquery.js">Jquery.js</label>
+                <br>
+                <span>
+                    Skills selected by you: {{skills}}
+                </span>
+                <br>
+                <br>
+                <span>Select a role you would like to play</span>
+                <select v-model="selected">
+                    <option disabled value="">Please select one</option>
+                    <option>Frontend Dev</option>
+                    <option>Backend Dev</option>
+                    <option>Fullstack Dev</option>
+                </select>
+                <br>
+                <span>{{message}} selected the role of: {{ selected }}</span>
+
+
+
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        var v= new Vue({
+            el:"#frm",
+            data:{
+                message:'',
+                paragraph:'',
+                checked: false,
+                skills: [],
+                selected:"",
+            }
+
+        })
+
+    </script>
+
+
+
+</body>
+</html>
