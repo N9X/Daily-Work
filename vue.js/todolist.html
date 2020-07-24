@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .done{
+            text-decoration: line-through;
+        }
+    </style>
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div id="todo" class="container-fluid">
+        <div class="container">
+            <form @submit.prevent="addTodo">
+                <label for="newTodo">New todo</label>
+                <input v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
+                <br>
+
+                <button type="submit">Add</button>
+            </form>
+            <button @click="allDone" type="button">ALL DONE</button>
+            <ul>
+                <li v-for='todo in todos'>
+                    <input type="checkbox" v-model='todo.done'>
+                    <span :class="{ done:todo.done }">{{todo.title}}</span>
+                    <br><button @click="removeTodo(todo)">Remove</button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var v =  new Vue({
+            el:'#todo',
+            data:{
+                newTodo:"",
+                todos:[],
+
+
+
+            },
+            methods:{
+                addTodo(){
+                    this.todos.push({
+                        title: this.newTodo,
+                        done:false
+
+                    });
+                    this.newTodo='';
+                },
+                removeTodo(){
+                    const todoIndex = this.todos.indexOf(todo);
+                    this.todos.splice(todoIndex,1);
+                },
+                allDone(){
+                    this.todos.forEach(todo => {
+                        todo.done=true;
+                    });
+                }
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
