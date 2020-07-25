@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+  <link href="material-kit.css" rel="stylesheet" />
+    <title>Signup page</title>
+</head>
+<body>
+    <nav class="navbar navbar-color-on-scroll navbar-dark bg-dark fixed-top navbar-expand-lg" color-on-scroll="100">
+        <div class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="behance_complete.html">
+              Behance </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                Sign in
+                </a>
+              </li>
+            </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link active">SignUp With email</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Jobs</a>
+            </li>
+    
+          </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid main min-raised">
+        <div class="container ml-auto" id="frm" >
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span>Your name here:</span>
+            <input v-model="message" placeholder="name please!">
+            <br>
+            <span>E-mail</span>
+
+            <input v-model="email" placeholder="email">
+            
+        
+            <br>
+            <br>
+            <input type="checkbox" id="male" value="Male" v-model="gender">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" value="female" v-model="gender">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <input type="checkbox" id="Abstract" value="Abstract" v-model="intreseted">
+            <label for="Abstract">Abstract Art form</label>
+            <input type="checkbox" id="music" value="Music" v-model="intreseted">
+            <label for="music">Music</label>
+            <input type="checkbox" id="car" value="Car" v-model="intreseted">
+            <label for="car">Car</label>
+            <br>
+            <span>
+                Intrest selected by you: {{intreseted}}
+            </span>
+            <br>
+            <br>
+            <button type="submit" @click="display">Submit</button>
+            <br>
+           
+           
+
+
+
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+
+    var v= new Vue({
+        el:"#frm",
+        data:{
+            message:'',
+            gender:[],
+            intreseted:[ ],
+            selected:"",
+        },
+        methods:{
+            display:function(event){
+                if(this.message==='',this.paragraph==='',this.intreseted===''){
+                 alert("please enter required feilds")
+                 
+                }
+                else
+                {
+                    alert('Form submitted ' +  this.message + '!');
+                }
+                
+               
+            },
+            
+        }
+
+    })
+
+</script>
+
+    
+</body>
+</html>
