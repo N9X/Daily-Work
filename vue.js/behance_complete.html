@@ -10,12 +10,12 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
-  <link href="material-kit.css" rel="stylesheet" />
+  <link href="material-bootstrap.css" rel="stylesheet" />
 </head>
 
 <body>
   <nav class="navbar navbar-color-on-scroll navbar-dark bg-dark fixed-top navbar-expand-lg" color-on-scroll="100">
-    <div class="container">
+    <div id="app" class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="behance_complete.html" >
           Behance </a>
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="login.html" class="nav-link">
             Sign in
             </a>
           </li>
@@ -42,14 +42,14 @@
           <a href="signup.html" class="nav-link">SignUp With email</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Jobs</a>
+          <a href="jobs.html" class="nav-link">Jobs</a>
         </li>
 
       </ul>
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('bg_img.jfif')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('bg_2.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
@@ -64,7 +64,9 @@
   <div class="main main-raised">
     <div class="container">
       <div class="section text-center">
-        <h2 class="title">ART FROMS</h2>
+        <h2 class="abs_title">
+          <a href="art.html">ART FROMS</a>
+        </h2>
         <div class="row">
           <div class="col-md-3">
             <img src="pic1.jfif" class="rounded" alt="Image of Abstract Art">
@@ -84,7 +86,9 @@
     </div>
     <div class="container">
       <div class="section text-center">
-        <h2 class="intrest_title">MUSIC</h2>
+        <h2 class="intrest_title">
+          <a href="music.html">MUSIC</a>
+        </h2>
         <div class="row">
           <div class="col-md-3">
             <img src="mpic1.jfif" class="rounded" alt="Image of music Art">
@@ -105,7 +109,9 @@
     </div>
     <div class="container">
       <div class="section text-center">
-        <h2 class="intrest_title">CAR</h2>
+        <h2 class="intrest_title">
+          <a href="car.html">CAR</a>
+        </h2>
         <div class="row">
           <div class="col-md-3">
             <img src="cpic1.jfif" class="rounded" alt="Image of car Art">
@@ -118,16 +124,42 @@
             <img src="cpic3.jfif" class="rounded" alt="Image of car Art">
           </div>
           <div class="col-md-3">
-            <img src="cpic4.jfif" class="rounded" alt="Image of car Art">
+            <img src="cpic4.jfif" class="rounded" @click="openImg" alt="Image of car Art">
           </div>
         </div>
 
       </div>
     </div>
+    <div class="jumbotron">
+      <div class="col-lg-12 mx-auto">
+        <a href="signup.html">GET YOURSELF SIGNED UP AND READY FOR THE BEST OF ART ONLY ON BEHANCE</a>
+      </div>
+      <div class="text-right">
+        <a>Contact Details</a><br>
+        <a>Ph:+1203040</a><br>
+        <a>Address</a><br>
+        <a>Somewhere On earth</a><br>
+        <a href="#">behance@behance.com</a>
+      </div>
+    </div>
+
   </div>
   <footer class="footer footer-default">
     
+    
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var v = new Vue({
+      el:'#app',
+      method:{
+        openImg(){
+
+        },
+      }
+    })
+  </script>
 </body>
 
 </html>
