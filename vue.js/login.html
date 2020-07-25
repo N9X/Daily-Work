@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <link href="material-bootstrap.css" rel="stylesheet">
+    <script></script>
+    <title>Login</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-color-on-scroll navbar-dark bg-dark fixed-top navbar-expand-lg" color-on-scroll="100">
+        <div id="app" class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="behance_complete.html" >
+              Behance </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                Sign in
+                </a>
+              </li>
+            </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="behance_complete.html" class="nav-link active">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link">SignUp With email</a>
+            </li>
+            <li class="nav-item">
+              <a href="jobs.html" class="nav-link">Jobs</a>
+            </li>
+    
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-color-on-scroll navbar-dark bg-dark fixed-top navbar-expand-lg" color-on-scroll="100">
+    <div id="app" class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="behance_complete.html" >
+          Behance </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            Sign in
+            </a>
+          </li>
+        </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Discover</a>
+        </li>
+        <li class="nav-item">
+          <a href="signup.html" class="nav-link">SignUp With email</a>
+        </li>
+        <li class="nav-item">
+          <a href="jobs.html" class="nav-link">Jobs</a>
+        </li>
+
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="login-reg-panel" id="login">
+      <br>
+      <br>
+      <br>
+    <div class="login-info-box">
+        <h2>Have an account?</h2>
+        
+        <label id="label-register" for="log-reg-show">Login</label>
+        <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked" v-for="login in logins">
+    </div>
+                        
+    <div class="register-info-box">
+        <h2>Don't have an account?</h2>
+        <p>Create New</p>
+        <label id="label-login" for="log-login-show">Register</label>
+        <input type="radio" name="active-log-panel" id="log-login-show">
+    </div>
+                        
+    <div class="white-panel">
+        <div class="login-show">
+            <h2>LOGIN</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="button" value="Login">
+            <a href="">Forgot password?</a>
+        </div>
+        <div class="register-show">
+            <h2>REGISTER</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <input type="button" value="Register">
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+</body>
+
+
+
+
+</html>
