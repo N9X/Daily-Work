@@ -1,0 +1,19 @@
+{
+  "name": "daily-work",
+  "version": "1.0.0",
+  "description": "This is all the work done on 18th July\r over here i have tried to create a excat copy of wwf site \r the website has linked pages and has a from validation",
+  "main": "vue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N9X/Daily-Work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N9X/Daily-Work/issues"
+  },
+  "homepage": "https://github.com/N9X/Daily-Work#readme"
+}
