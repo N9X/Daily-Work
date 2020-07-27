@@ -77,23 +77,23 @@ function mySet() {
 }
 var setA = new mySet();  
 var setB = new mySet();  
-setA.add("a");  
-setB.add("b");  
-setB.add("c");  
-setB.add("a");  
-setB.add("d");  
+setA.add("hello a");  
+setB.add("hello b");  
+setB.add("hello c");  
+setB.add("hello a");  
+setB.add("hello d");  
 console.log(setA.subset(setB));
 console.log(setA.intersection(setB).values());
 console.log(setB.difference(setA).values());
 
 var setC = new Set();  
 var setD = new Set();  
-setC.add("a");  
-setD.add("b");  
-setD.add("c");  
-setD.add("a");  
-setD.add("d");  
+setC.add("hello a");  
+setD.add("hello b");  
+setD.add("hello c");  
+setD.add("hello a");  
+setD.add("hello d");  
 console.log(setD.values())
-setD.delete("a");
-console.log(setD.has("a"));
-console.log(setD.add("d"));
+setD.delete("hello a");
+console.log(setD.has("hello a"));
+console.log(setD.add("hello d"));
